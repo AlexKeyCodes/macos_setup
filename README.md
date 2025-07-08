@@ -4,7 +4,7 @@ This is a quick and easy way to get setup on a new macos machine. This is for my
 
 I doubt anyone will actually use this, but if you do please read through the script before running it! Don't run random scripts from the internet :)
 
-P.S - This doesn't include terminal or text editor setup. Please see my [terminal repo](https://github.com/AlexKeyCodes/terminal) and [neovim repo](https://github.com/AlexKeyCodes/neovim)
+P.S. - This doesn't include terminal or text editor setup. Please see my [terminal repo](https://github.com/AlexKeyCodes/terminal) and [neovim repo](https://github.com/AlexKeyCodes/neovim)
 
 ## Quick Start
 
@@ -76,3 +76,5 @@ Your SSH public key has been automatically copied to your clipboard. Add it to y
 - 88 Restaurants
 - Gourmet Garlic Gardens
 - Portfolio
+
+### 4. Setup workspaces shortcuts
