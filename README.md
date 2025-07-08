@@ -4,6 +4,8 @@ This is a quick and easy way to get setup on a new macos machine. This is for my
 
 I doubt anyone will actually use this, but if you do please read through the script before running it! Don't run random scripts from the internet :)
 
+P.S - This doesn't include terminal or text editor setup. Please see my [terminal repo](https://github.com/AlexKeyCodes/terminal) and [neovim repo](https://github.com/AlexKeyCodes/neovim)
+
 ## Quick Start
 
 UPDATE THESE SETTINGS IN SCRIPT!
@@ -12,13 +14,13 @@ git config --global user.name "name"
 git config --global user.email "name@email.com"
 ```
 
-1. **Close Script**
+1. **Clone Repo**
    ```bash
    git clone git@github.com:AlexKeyCodes/macos_setup.git
    ```
 2. **Make it executable:**
    ```bash
-   chmod +x setup_macos_dev.sh
+   chmod +x install.sh
    ```
 3. **Run the script:**
    ```bash
