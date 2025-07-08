@@ -67,104 +67,12 @@ source ~/.zshrc
 Your SSH public key has been automatically copied to your clipboard. Add it to your Git services:
 
 - **GitHub**: Settings → SSH and GPG keys → New SSH key
-- **GitLab**: User Settings → SSH Keys → Add SSH key
-- **Bitbucket**: Personal settings → SSH keys → Add key
+- **Servers**: Add ssh key to all your servers
 
-### 3. Install Claude Code
-The script includes npm installation of Claude Code:
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-You can then use Claude Code from your terminal:
-```bash
-claude-code
-```
-
-### 4. Database Configuration
-Both MySQL and PostgreSQL are installed and started automatically. Default connection details:
-
-**MySQL:**
-- Host: `localhost`
-- Port: `3306`
-- User: `root`
-- Password: (none initially)
-
-**PostgreSQL:**
-- Host: `localhost`
-- Port: `5432`
-- User: Your system username
-- Database: Your system username
-
-## Ruby Management
-
-Ruby is managed via chruby. To use different Ruby versions:
-
-```bash
-# Install a specific Ruby version
-ruby-install ruby 3.2.0
-
-# Switch to a Ruby version
-chruby 3.2.0
-
-# Set default Ruby version
-echo "ruby-3.2.0" > ~/.ruby-version
-```
-
-## Node.js Management
-
-Node.js is managed via nvm:
-
-```bash
-# Install latest LTS Node.js
-nvm install --lts
-
-# Install specific Node.js version
-nvm install 18.17.0
-
-# Switch Node.js versions
-nvm use 18.17.0
-
-# Set default Node.js version
-nvm alias default 18.17.0
-```
-
-## Troubleshooting
-
-### Permission Issues
-If you encounter permission errors:
-```bash
-sudo chown -R $(whoami) /opt/homebrew
-```
-
-### PATH Issues
-If commands aren't found, ensure your PATH is configured:
-```bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-source ~/.zprofile
-```
-
-### Database Connection Issues
-To restart database services:
-```bash
-brew services restart mysql
-brew services restart postgresql@14
-```
-
-## Customization
-
-You can modify the script to add or remove tools based on your needs. The script is organized into clear sections for easy customization.
-
-## System Requirements
-
-- macOS 10.15 (Catalina) or later
-- Internet connection for downloading packages
-- Administrator privileges for some installations
-
-## Support
-
-For issues with specific tools, refer to their official documentation:
-- [Homebrew](https://brew.sh/)
-- [nvm](https://github.com/nvm-sh/nvm)
-- [chruby](https://github.com/postmodern/chruby)
-- [Claude Code](https://github.com/anthropics/claude-code)
+### 3. Clone all your repos
+- Tally Meals
+- Austin City Guide
+- Reservation Genie
+- 88 Restaurants
+- Gourmet Garlic Gardens
+- Portfolio
