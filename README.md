@@ -1,10 +1,10 @@
 # macOS Development Setup
 
-A comprehensive setup script for macOS development environments. This script automates the installation and configuration of essential development tools, programming languages, and productivity applications.
+This is a quick and easy way to get setup on a new macos machine. This is for my own personal dev environment which is focused around Ruby on Rails.
+
+I doubt anyone will actually use this, but if you do please read through the script before running it! Don't run random scripts from the internet :)
 
 ## Quick Start
-
-## Git Configuration
 
 UPDATE THESE SETTINGS IN SCRIPT!
 ```bash
@@ -12,14 +12,17 @@ git config --global user.name "name"
 git config --global user.email "name@email.com"
 ```
 
-1. **Download the script** (save as `setup_macos_dev.sh`)
+1. **Close Script**
+   ```bash
+   git clone git@github.com:AlexKeyCodes/macos_setup.git
+   ```
 2. **Make it executable:**
    ```bash
    chmod +x setup_macos_dev.sh
    ```
 3. **Run the script:**
    ```bash
-   ./setup_macos_dev.sh
+   ./install.sh
    ```
 
 ## What Gets Installed
