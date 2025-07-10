@@ -53,6 +53,7 @@ brew install btop
 brew install yarn
 brew install mysql
 brew install postgresql@14
+brew install ripgrep
 npm install -g @anthropic-ai/claude-code
 
 # Start database services
