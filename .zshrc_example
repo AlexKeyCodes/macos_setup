@@ -1,0 +1,47 @@
+# ─── PATH ──────────────────────────────────────────────────────────────────
+# Set PATH additions first so they're in place before any tool init runs.
+export PATH="$HOME/.local/bin:$PATH"
+
+# ─── Ruby (chruby) ─────────────────────────────────────────────────────────
+source /opt/homebrew/share/chruby/chruby.sh
+source /opt/homebrew/share/chruby/auto.sh
+# Default Ruby when no project-level .ruby-version is found.
+# (You can also drop a `.ruby-version` file in ~ for the same effect.)
+chruby ruby-3.4.4
+
+# ─── Python (pyenv) ────────────────────────────────────────────────────────
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# ─── Node (nvm) ────────────────────────────────────────────────────────────
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# ─── Completion ────────────────────────────────────────────────────────────
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# ─── History ───────────────────────────────────────────────────────────────
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+
+# ─── Plugins (antidote) ────────────────────────────────────────────────────
+source $(brew --prefix)/share/antidote/antidote.zsh
+antidote load
+
+# Catppuccin colors for zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#585b70'
+
+# ─── Prompt (starship) ─────────────────────────────────────────────────────
+eval "$(starship init zsh)"
+
+# ─── Aliases ───────────────────────────────────────────────────────────────
+[[ -f ~/.aliases ]] && source ~/.aliases
